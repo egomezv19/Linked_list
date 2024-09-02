@@ -1,5 +1,5 @@
 #include <iostream>
-
+//holaaaaa amooooooooooor te amuuuuuuuuuuuuuuu
 using namespace std;
 struct ListNode {
     int val;         // Valor que almacenará el nodo

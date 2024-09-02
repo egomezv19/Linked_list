@@ -22,11 +22,11 @@ void insertMCD(Node* head) {
 
     while (current != nullptr && current->next != nullptr) { // hasta que ambos sean nulos 
         // Calculamos el MCD entre el nodo actual y el siguiente
-        int gcdValue = mcd(current->data, current->next->data);
+        int mcdValue = mcd(current->data, current->next->data);
 
         // Creamos un nuevo nodo con el valor del MCD
         Node* newNode = new Node();
-        newNode->data = gcdValue;
+        newNode->data = mcdValue;
 
         // Insertamos el nuevo nodo entre current y current->next
         newNode->next = current->next;  // new node apunta al siguiente nodo
@@ -35,4 +35,7 @@ void insertMCD(Node* head) {
         // Avanzamos al siguiente nodo original (saltamos el nodo recién insertado)
         current = newNode->next;
     }
+}
+int main (){
+
 }
