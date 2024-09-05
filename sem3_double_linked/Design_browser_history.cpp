@@ -26,7 +26,7 @@ stack<string> stack2;
     string forward(int steps) {
         while (stack2.empty()==false && steps>0){
             stack1.push(stack2.top())
-            stack2.pop());
+            stack2.pop();
             steps--;
         
         }
