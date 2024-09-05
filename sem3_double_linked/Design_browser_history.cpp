@@ -1,10 +1,10 @@
 class BrowserHistory {
 public:
-stack<string> stack1;
-stack<string> stack2;
+    stack<string> stack1;
+    stack<string> stack2;
 
     BrowserHistory(string homepage) {
-        stack.push(homepage)
+        stack1.push(homepage);
     }
     
     void visit(string url) {
@@ -20,12 +20,12 @@ stack<string> stack2;
             stack1.pop();
             steps--;
         }
-        return stack1.top;
+        return stack1.top();
     }
     
     string forward(int steps) {
         while (stack2.empty()==false && steps>0){
-            stack1.push(stack2.top())
+            stack1.push(stack2.top());
             stack2.pop();
             steps--;
         

@@ -1,9 +1,9 @@
 class LRUCache {
 public:
-int capacity;
-queue<int> used history;
-unordered_map<int,int> q_counter;
-unordered_map<int,int> dict;
+    int capacity;
+    queue<int> used_history;
+    unordered_map<int,int> q_counter;
+    unordered_map<int,int> dict;
 
     LRUCache(int capacity) {
         this->capacity = capacity;
@@ -37,6 +37,7 @@ unordered_map<int,int> dict;
         if (dict.size() > this->capacity){
             remove_lru();
     }
+};
 };
 
 /**
