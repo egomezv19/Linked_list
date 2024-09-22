@@ -1,4 +1,5 @@
 class BrowserHistory {
+    // falta entender :C
 public:
     stack<string> stack1;
     stack<string> stack2;

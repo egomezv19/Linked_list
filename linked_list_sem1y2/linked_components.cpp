@@ -13,11 +13,10 @@ struct ListNode {
 
 class Solution {
 public:
-    int numComponents(ListNode* head, vector<int>& nums) {
-        // Ordenar el vector nums para usar búsqueda binaria
-        sort(nums.begin(), nums.end());
-        int count = 0;
-        bool inComponent = false;
+    int numComponents(ListNode* head, vector<int>& nums) { // head es el puntero y nums es el subconjunto que contiene numros
+        sort(nums.begin(), nums.end());// Ordenar el vector nums para usar búsqueda binaria
+        int count = 0; 
+        bool inComponent = false; // para verificar que estamos en una componente conectada 
         
         while (head != nullptr) {
             // Usar búsqueda binaria para ver si el valor está en nums

@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+//falta entender 
 class LRUCache {
 public:
     int capacity;
