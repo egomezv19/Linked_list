@@ -5,7 +5,7 @@ using namespace std;
 
 int main (){
     cout<<"ingrese numero: "<<endl;
-    int num=5;
+    int num=10;
     // forma creciente
     for (int i=1; i<=num; i++){
         for (int j =1;j<=i;j++){
